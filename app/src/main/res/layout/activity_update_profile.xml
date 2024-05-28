@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="18dp"
+    app:cardCornerRadius="18dp"
+    android:layout_margin="20dp"
+    tools:context=".UpdateProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/profileNameEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter Your Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/profileEmailEt"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"
+            app:layout_constraintEnd_toEndOf="@+id/profileNameEt"
+            app:layout_constraintStart_toStartOf="@+id/profileNameEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileNameEt" />
+        <EditText
+            android:id="@+id/profileDOBEt"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:hint=" Date of Birth"
+            app:layout_constraintEnd_toEndOf="@+id/profileEmailEt"
+            app:layout_constraintStart_toStartOf="@+id/profileEmailEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileEmailEt" />
+
+        <EditText
+            android:id="@+id/profileDistrictEt"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your District"
+            app:layout_constraintEnd_toEndOf="@+id/profileDOBEt"
+            app:layout_constraintStart_toStartOf="@+id/profileDOBEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileDOBEt" />
+
+        <EditText
+            android:id="@+id/profilemobileEt"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Mobile No"
+            app:layout_constraintEnd_toEndOf="@+id/profileDistrictEt"
+            app:layout_constraintStart_toStartOf="@+id/profileDistrictEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileDistrictEt" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#00BCD4"
+            android:fontFamily="@font/aladin"
+            android:text="UPDATE PROFILE"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/profilemobileEt"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/profilemobileEt"
+            app:layout_constraintTop_toBottomOf="@+id/profilemobileEt"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
